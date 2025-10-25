@@ -1,18 +1,41 @@
 import { createBrowserRouter } from "react-router";
-import Home from "../Layout/Home";
+import Home from "../Page/Home";
+import MyProfile from "../MyProfile/MyProfile";
+import HomeLayout from "../components/HomeLayout/HomeLayout";
+import Products from "../components/Products/Products";
+import ErrorPage from "../Page/ErrorPage";
+import ProductDetails from "../components/ProductDetails/ProductDetails";
+import Login from "../LoginPage/Login";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <HomeLayout />,
+    errorElement: <ErrorPage />,
+    hydrateFallbackElement: <p>Loading...</p>,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "products",
+        element: <Products />,
+      },
+    ],
   },
   {
-    path: "/auth",
-    element: <h2>Authentication layout</h2>,
+    path: "/login",
+    element: <Login />,
+  },
+
+  {
+    path: "/profile",
+    element: <MyProfile />,
   },
   {
-    path: "/*",
-    element: <h2>Error 404</h2>,
+    path: "/product/:id",
+    element: <ProductDetails />,
   },
 ]);
 

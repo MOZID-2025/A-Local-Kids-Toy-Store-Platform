@@ -1,0 +1,74 @@
+[
+  {
+    "toyId": 1,
+    "toyName": "Hot Wheels Track Set",
+    "sellerName": "Speedy Toys Store",
+    "sellerEmail": "info@speedytoys.com",
+    "price": 34.99,
+    "rating": 4.5,
+    "availableQuantity": 120,
+    "description": "Exciting Hot Wheels track set with loops and ramps. Perfect for kids to race their favorite cars and create thrilling tracks.",
+    "pictureURL": "https://i.ibb.co.com/YTBPmJKz/81q94-ZM9zj-L.jpg",
+    "subCategory": "Cars & Tracks"
+  },
+  {
+    "toyId": 2,
+    "toyName": "Barbie Dreamhouse",
+    "sellerName": "Doll World",
+    "sellerEmail": "support@dollworld.com",
+    "price": 199.99,
+    "rating": 4.8,
+    "availableQuantity": 30,
+    "description": "A luxurious Barbie Dreamhouse with multiple rooms, furniture, and accessories. Encourages imaginative play for children.",
+    "pictureURL": "https://i.ibb.co.com/HDNjcz7w/e82be4ef221bec8dfa4a3f6635786e6c.jpg",
+    "subCategory": "Dolls & Accessories"
+  },
+  {
+    "toyId": 3,
+    "toyName": "Fisher-Price Musical Piano",
+    "sellerName": "Kids Music Store",
+    "sellerEmail": "hello@kidsmusic.com",
+    "price": 29.99,
+    "rating": 4.6,
+    "availableQuantity": 50,
+    "description": "A colorful musical piano for toddlers that teaches notes, melodies, and promotes sensory development.",
+    "pictureURL": "https://i.ibb.co.com/HTXRmqfT/8b9e1db9-7276-4205-90a7-27f85b8357e8-jpg-720.jpg",
+    "subCategory": "Musical Instruments"
+  },
+  {
+    "toyId": 4,
+    "toyName": "NERF Elite Blaster",
+    "sellerName": "Action Toy Store",
+    "sellerEmail": "sales@actiontoys.com",
+    "price": 39.99,
+    "rating": 4.4,
+    "availableQuantity": 80,
+    "description": "NERF Elite Blaster with high-speed foam darts. Perfect for outdoor fun and active play.",
+    "pictureURL": "https://i.ibb.co.com/1fDBgQwB/71lf1-A-wl-EL-AC-SL1500.jpg",
+    "subCategory": "Action & Sports"
+  },
+  {
+    "toyId": 5,
+    "toyName": "Puzzle Cube Set",
+    "sellerName": "Brainy Kids Store",
+    "sellerEmail": "contact@brainykids.com",
+    "price": 14.99,
+    "rating": 4.3,
+    "availableQuantity": 200,
+    "description": "Set of colorful puzzle cubes that challenge problem-solving and hand-eye coordination. Great for all ages.",
+    "pictureURL": "https://i.ibb.co.com/Kc4xnMHg/Qi-Yi-Luxurious-Set-Black-grande.webp",
+    "subCategory": "Puzzles & Brain Games"
+  },
+  {
+    "toyId": 6,
+    "toyName": "Play-Doh Fun Pack",
+    "sellerName": "Creative Kids Store",
+    "sellerEmail": "info@creativekids.com",
+    "price": 9.99,
+    "rating": 4.7,
+    "availableQuantity": 150,
+    "description": "Colorful Play-Doh pack with molds and tools to spark creativity and imaginative play for children.",
+    "pictureURL": "https://i.ibb.co.com/B2qJ2gGc/maxresdefault.jpg",
+    "subCategory": "Arts & Crafts"
+  }
+]
