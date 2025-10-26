@@ -7,7 +7,7 @@ const CallToAction = () => {
     <section
       className="relative w-full h-[50vh] bg-cover bg-center flex items-center"
       style={{
-        backgroundImage: `url(${toy})`, // full-width background
+        backgroundImage: `url(${toy})`,
       }}
     >
       <div className="absolute inset-0 bg-white/30"></div>
