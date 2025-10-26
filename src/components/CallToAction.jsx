@@ -10,7 +10,6 @@ const CallToAction = () => {
         backgroundImage: `url(${toy})`, // full-width background
       }}
     >
-      {/* Overlay for readability */}
       <div className="absolute inset-0 bg-white/30"></div>
 
       <div className="relative z-10 w-full">
