@@ -2,11 +2,10 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
 
 const ProductDetails = () => {
-  const { id } = useParams(); // ✅ must match your route name
+  const { id } = useParams();
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // ✅ Load data from public/Products.json
   useEffect(() => {
     fetch("/Products.json")
       .then((res) => res.json())
@@ -21,7 +20,6 @@ const ProductDetails = () => {
     return <p className="text-center mt-10">Loading...</p>;
   }
 
-  // ✅ Match product by id
   const product = products.find((p) => String(p.toyId) === id);
 
   if (!product) {

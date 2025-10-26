@@ -5,7 +5,10 @@ import HomeLayout from "../components/HomeLayout/HomeLayout";
 import Products from "../components/Products/Products";
 import ErrorPage from "../Page/ErrorPage";
 import ProductDetails from "../components/ProductDetails/ProductDetails";
-import Login from "../LoginPage/Login";
+import Login from "../../src/LoginPage/Login";
+import Register from "../Register/Register";
+import AuthLayout from "../AuthLayout/AuthLayout";
+import PrivateRoute from "../components/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -25,8 +28,18 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/login",
-    element: <Login />,
+    path: "/",
+    element: <AuthLayout />,
+    children: [
+      {
+        path: "/auth/login",
+        element: <Login />,
+      },
+      {
+        path: "/auth/register",
+        element: <Register />,
+      },
+    ],
   },
 
   {
@@ -35,7 +48,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/product/:id",
-    element: <ProductDetails />,
+    element: (
+      <PrivateRoute>
+        <ProductDetails />
+      </PrivateRoute>
+    ),
   },
 ]);
 

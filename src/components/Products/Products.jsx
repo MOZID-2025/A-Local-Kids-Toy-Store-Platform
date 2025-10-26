@@ -2,7 +2,7 @@ import { FaStar } from "react-icons/fa";
 import { Link } from "react-router";
 
 const Products = ({ product }) => {
-  console.log(product);
+  // console.log(product);
   const { toyName, price, rating, subCategory, pictureURL, toyId } = product;
   return (
     <div className="card bg-base-100 w-96 shadow-sm p-4 border overflow-hidden hover:scale-110 transition ease-in-out">
