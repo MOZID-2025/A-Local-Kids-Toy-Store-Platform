@@ -3,8 +3,22 @@ import { FcGoogle } from "react-icons/fc";
 import React, { use, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { auth } from "../fairebase/firebase.config";
+const googleProvider = new GoogleAuthProvider();
 
 const Login = () => {
+  const handleGoogleSignIn = () => {
+    // console.log("button cliek");
+
+    signInWithPopup(auth, googleProvider)
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   const [error, setError] = useState("");
   const { signIn } = use(AuthContext);
   const location = useLocation();
@@ -29,6 +43,7 @@ const Login = () => {
         setError(errorCode);
       });
   };
+
   return (
     <div className="flex justify-center min-h-screen items-center">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
@@ -59,6 +74,10 @@ const Login = () => {
             {error && <p className="text-red-500">{error}</p>}
             <button type="submit" className="btn btn-neutral mt-4">
               Login
+            </button>
+            <button onClick={handleGoogleSignIn} className="btn btn-primary">
+              <FcGoogle />
+              Login with Google
             </button>
             <h2 className="font-semibold text-center pt-5">
               Don't have an account?{" "}

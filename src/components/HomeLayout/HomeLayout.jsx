@@ -17,7 +17,7 @@ const HomeLayout = () => {
         </div>
         <div>{state == "loading" ? <Loading /> : <Outlet />}</div>
 
-        <div className="flex- flex-col min-h-screen">
+        <div className="">
           <Footer />
         </div>
       </main>
