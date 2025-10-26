@@ -10,7 +10,7 @@ const Products = ({ product }) => {
         <img className="w-full h-50" src={pictureURL} alt="" />
       </figure>
       <div className="card-body bg-gray-50">
-        <h2 className="card-title mb-10">
+        <h2 className="card-title">
           {toyName}
           <div className="badge badge-secondary">$ {price}</div>
         </h2>

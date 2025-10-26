@@ -1,12 +1,14 @@
 import React, { use } from "react";
 import Products from "../components/Products/Products";
+import Featurs from "../components/Featurs";
+import CallToAction from "../components/CallToAction";
 
 const productsData = fetch("/Products.json").then((res) => res.json());
 
 const Home = () => {
   const products = use(productsData);
   return (
-    <div className="bg-gray-100 pb-10">
+    <div className="bg-gray-100">
       <div className="max-w-[1280px] mx-auto p-10">
         <h2 className="text-center text-3xl font-bold">
           Top Trending Toys for Kids Fun, Creative & Educational!
@@ -21,6 +23,13 @@ const Home = () => {
         {products.map((product) => (
           <Products key={product.toyId} product={product}></Products>
         ))}
+      </div>
+
+      <div>
+        <Featurs />
+      </div>
+      <div>
+        <CallToAction />
       </div>
     </div>
   );

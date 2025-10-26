@@ -34,6 +34,12 @@ const Footer = () => {
           </div>
         </nav>
       </div>
+      <hr className="text-gray-500" />
+      <div className=" px-6 py-6 text-center">
+        <p className="text-sm">
+          © {new Date().getFullYear()} Your Company. All rights reserved.
+        </p>
+      </div>
     </footer>
   );
 };
