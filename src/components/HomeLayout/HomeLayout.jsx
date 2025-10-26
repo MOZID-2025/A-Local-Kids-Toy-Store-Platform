@@ -11,14 +11,13 @@ const HomeLayout = () => {
   return (
     <div>
       <Header />
-      {import.meta.env.VITE_name}
       <main>
         <div>
           <Slider />
         </div>
         <div>{state == "loading" ? <Loading /> : <Outlet />}</div>
 
-        <div>
+        <div className="flex- flex-col min-h-screen">
           <Footer />
         </div>
       </main>

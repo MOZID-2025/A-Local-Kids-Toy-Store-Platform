@@ -1,16 +1,49 @@
-# React + Vite
+project name: ToyTopia – Local Kids Toy Store Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+purpose: ToyTopia is a vibrant and playful online marketplace designed for kids’ toys. The platform allows users to explore toys from local sellers, view detailed information, and interact through feedback and ratings. It encourages families to support local toy businesses while providing a fun, responsive, and secure browsing experience for children’s toy shopping.
 
-Currently, two official plugins are available:
+live URL:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+key features:
 
-## React Compiler
+- Home Page
+  Interactive Swiper Slider showcasing featured toys.
+  Popular Toys section displaying toy cards with price, rating, and availability.
+  “View More” button redirects users to detailed toy pages (Protected Route).
+  Two additional engaging sections to enhance user experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Authentication
+  Email & Password authentication using Firebase Auth.
+  Google Login integration.
+  Password validation:
+  At least 6 characters
+  At least 1 uppercase & 1 lowercase letter
+  Toast/SweetAlert for success & error messages.
+  Persistent Login State using onAuthStateChanged.
 
-## Expanding the ESLint configuration
+- My Profile (Protected Route)
+  Shows logged-in user information (name, email, and photo).
+  User can edit profile info using Firebase’s updateProfile() method.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Additional Routes
+  Toy Details Page (Protected):
+  Displays full toy information with a simple “Try Now” form and success message.
+  Extra Private Route: Includes additional meaningful content (e.g., “My Favorite Toys”).
+  Forgot Password Page with Gmail redirect.
+
+- Navigation & Layout
+  Dynamic Navbar with user image, login/logout state.
+  Footer with links to Terms, Privacy Policy, and social media.
+  Dynamic page titles using react-helmet.
+  Responsive Design for mobile, tablet, and desktop.
+
+- Error Page
+  Custom 404 Not Found page with return-home navigation.
+
+npm packages:
+
+1. react-router-dom
+2. firebase
+3. react-icons
+4. tailwindcss
+5. daisyui

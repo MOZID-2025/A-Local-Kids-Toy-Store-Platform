@@ -19,3 +19,8 @@
 .navbar a.active {
   text-decoration: underline;
 }
+html,
+body,
+#root {
+  height: 100%;
+}

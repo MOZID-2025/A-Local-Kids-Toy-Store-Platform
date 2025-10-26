@@ -53,7 +53,7 @@ const Header = () => {
             {link}
           </ul>
         </div>
-        <div>{user && user.email}</div>
+
         <Link to="/" className="text-xl">
           Kids Toy Store
         </Link>
