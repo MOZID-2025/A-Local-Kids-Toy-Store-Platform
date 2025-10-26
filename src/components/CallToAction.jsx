@@ -13,7 +13,6 @@ const CallToAction = () => {
       {/* Overlay for readability */}
       <div className="absolute inset-0 bg-white/30"></div>
 
-      {/* Centered content container (max 1280px) */}
       <div className="relative z-10 w-full">
         <div className="max-w-[1280px] mx-auto px-6 sm:px-10 md:px-20 text-center md:text-left">
           <p className="uppercase tracking-widest text-sm font-semibold text-gray-700 mb-3">
